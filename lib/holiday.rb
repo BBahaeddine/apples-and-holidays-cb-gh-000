@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       name = ""
       array = key2.to_s().split("_")
       if array.length == 1
-        name = item.capitalize();
+        name = array[0].capitalize();
       else
         array.each_with_index{|item, index|
           if index == array.length - 1
